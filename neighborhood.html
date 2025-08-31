@@ -1,31 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Neighborhood Walk</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
+  
+  <style>
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+    .skip-link:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      background: #000;
+      color: #fff;
+      padding: 0.5em;
+      display: inline-block;
+      z-index: 1000;
+    }
+  </style>
 </head>
+
 <body>
+  
   <a href="#main" class="skip-link">Skip to Main Content</a>
+
   <header>
     <nav>
       <ul>
-        <li><a href="neighborhood.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="neighborhood.html">Neighborhood Walks</a></li>
         <li><a href="parks.html">Walks in the Park</a></li>
       </ul>
-      <img src="images/BaconGallupPark.jpg" width="200" alt="Brown Labradoodle sitting next to a statue.">
+      <img src="images/BaconGallupPark.jpg" width="200" alt="Brown Labradoodle sitting next to a statue." />
     </nav>
+
     <h1>Michigan Parks</h1>
   </header>
+
   <main id="main">
     <p>Learn about neighborhood walks and their beauty!</p>
   </main>
+
   <footer>
-    <p>This page was originally created by Colleen van Lent for the
-      <a href="https://www.coursera.org/specializations/web-design">Web Design for Everybody</a> Specialization.
-      Students are invited to make changes.</p>
+    <p>
+      This page was originally created by Colleen van Lent for the
+      <a href="https://www.coursera.org/specializations/web-design">Web Design for Everybody</a>
+      Specialization. Students are invited to make changes.
+    </p>
   </footer>
 </body>
 </html>
